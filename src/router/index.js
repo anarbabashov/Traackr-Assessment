@@ -1,33 +1,33 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Dashboard from '../views/Dashboard.vue'
-import Account from '../views/Account.vue'
-import InfluencerList from '../views/InfluencerList.vue'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Dashboard from '../views/Dashboard.vue';
+import Account from '../views/Account.vue';
+import Influencers from '../views/Influencers.vue';
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/',
     name: 'Dashboard',
-    component: Dashboard
+    component: Dashboard,
   },
   {
     path: '/account',
     name: 'Account',
-    component: Account
+    component: Account,
   },
   {
-    path: '/influencer-list',
-    name: 'InfluencerList',
-    component: InfluencerList
-  }
-]
+    path: '/influencers',
+    name: 'Influencers',
+    component: Influencers,
+  },
+];
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;

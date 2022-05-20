@@ -1,0 +1,82 @@
+//*** Channels.vue ***//
+
+.channels {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (min-width: 1200px) {
+      max-width: 300px;
+    }
+    @media screen and (min-width: 1400px) {
+      max-width: inherit;
+    }
+  }
+  &__item {
+    list-style: none;
+    margin: 0 10px;
+    @media screen and (min-width: 1200px) {
+      margin: 0 8px;
+    }
+    @media screen and (min-width: 1400px) {
+      margin: 0 10px;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.tooltip {
+  position: relative;
+  &__text {
+    visibility: hidden;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 12px;
+    padding: 8px 12px;
+    background-color: white;
+    border: 1px solid var(--light-blue);
+    box-shadow: 0px 2px 4px rgba(160, 167, 178, 0.35);
+    border-radius: 8px;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 1;
+
+    @media screen and (min-width: 1200px) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  img {
+    @media screen and (min-width: 800px) {
+      width: 17px;
+      height: 17px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 16px;
+      height: 16px;
+    }
+    @media screen and (min-width: 1400px) {
+      width: 20px;
+      height: 20px;
+    }
+    @media screen and (min-width: 1600px) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &:hover {
+    .tooltip__text {
+      visibility: visible;
+      @media screen and (max-width: 1200px) {
+        visibility: hidden;
+      }
+    }
+  }
+}

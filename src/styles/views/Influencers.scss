@@ -1,0 +1,25 @@
+//*** Influencers.vue ***//
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 24px;
+  padding-bottom: 24px;
+  @media screen and (min-width: 800px) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 18px;
+    row-gap: 18px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 41px;
+    column-gap: 48px;
+    row-gap: 48px;
+  }
+}
+.error-message {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

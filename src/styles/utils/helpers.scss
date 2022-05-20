@@ -1,0 +1,25 @@
+//*** Helper ***//
+
+.hidden-xs {
+  @media screen and (max-width: 400px) {
+    display: none;
+  }
+}
+
+.hidden-sm {
+  @media (min-width: 400px) and (max-width: 800px) {
+    display: none;
+  }
+}
+
+.hidden-md {
+  @media (min-width: 800px) and (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.hidden-lg {
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}

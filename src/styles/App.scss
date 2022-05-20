@@ -1,0 +1,58 @@
+//*** App.vue ***//
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root {
+  --text-color: #021d28;
+  --text-dark-blue: #1e293b;
+  --text-blue: #475569;
+  --color-grey: #e2e5ea;
+  --light-blue: #cbd5e1;
+  --light-grey: #e5e5e5;
+  --color-brand-blue: #a5b4fc;
+}
+
+#app {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 150%;
+  min-height: 100vh;
+  background-color: var(--light-grey);
+  padding-top: 80px;
+}
+
+.container {
+  max-width: 1760px;
+  margin: auto;
+  padding: 0 24px;
+  @media screen and (min-width: 1200px) {
+    padding: 0 72px;
+  }
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 21px;
+  margin-bottom: 46px;
+  @media screen and (min-width: 800px) {
+    margin-bottom: 80px;
+    margin-top: 80px;
+  }
+}

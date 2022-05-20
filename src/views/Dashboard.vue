@@ -1,15 +1,15 @@
 <template>
   <div class="dashboard">
-    <h1>Dashboard</h1>
+    <div class="hero">
+      <Heading :title="$route.name" />
+    </div>
   </div>
 </template>
 
 <script>
-
-
+import Heading from '../components/Heading.vue';
 export default {
   name: 'Dashboard',
-  components: {
-  }
-}
+  components: { Heading },
+};
 </script>

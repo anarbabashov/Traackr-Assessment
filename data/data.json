@@ -1,5 +1,6 @@
 {
-   "influencers":[
+   "influencers":
+   [
       {
          "audience":2439571,
          "avatar":"https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/834.jpg",
@@ -9,7 +10,7 @@
          "reach":4.333,
          "resonance":35.538,
          "uid":"036caeb1-0d56-46aa-b0ff-6a261a8d1239",
-         "is_aligned":false,
+         "is_aligned":true,
          "channels":[
             {
                "handle":"Giuseppe.Hickle54",
@@ -17,8 +18,20 @@
             },
             {
                "handle":"Giuseppe.Hickle54",
+               "platform":"FBOOK"
+            },            
+            {
+               "handle":"Giuseppe.Hickle54",
                "platform":"TIKTOK"
+            },           
+            {
+               "handle":"Giuseppe.Hickle54",
+               "platform":"YOUTUBE"
             },
+            {
+               "handle":"Giuseppe.Hickle54",
+               "platform":"PINTEREST"
+            },                      
             {
                "handle":"Giuseppe.Hickle54",
                "platform":"GITHUB"
@@ -29,11 +42,7 @@
             },
             {
                "handle":"Giuseppe.Hickle54",
-               "platform":"FACEBOOK"
-            },
-            {
-               "handle":"Giuseppe.Hickle54",
-               "platform":"TWITTER"
+               "platform":"TWITT"
             },
             {
                "handle":"Giuseppe.Hickle54",
@@ -66,7 +75,7 @@
             },
             {
                "handle":"Herman_Dietrich70",
-               "platform":"TWITTER"
+               "platform":"TWITT"
             },
             {
                "handle":"Herman_Dietrich70",
@@ -87,7 +96,7 @@
          "channels":[
             {
                "handle":"Devonte.Bradtke",
-               "platform":"FACEBOOK"
+               "platform":"FBOOK"
             },
             {
                "handle":"Devonte.Bradtke",
@@ -95,7 +104,7 @@
             },
             {
                "handle":"Devonte.Bradtke",
-               "platform":"TWITTER"
+               "platform":"TWITT"
             }
          ]
       },
@@ -120,7 +129,7 @@
             },
             {
                "handle":"Emie.Nolan",
-               "platform":"TWITTER"
+               "platform":"TWITT"
             },
             {
                "handle":"Emie.Nolan",
@@ -132,7 +141,7 @@
             },
             {
                "handle":"Emie.Nolan",
-               "platform":"FACEBOOK"
+               "platform":"FBOOK"
             }
          ]
       },
@@ -149,11 +158,11 @@
          "channels":[
             {
                "handle":"Kylie74",
-               "platform":"TWITTER"
+               "platform":"TWITT"
             },
             {
                "handle":"Kylie74",
-               "platform":"FACEBOOK"
+               "platform":"FBOOK"
             },
             {
                "handle":"Kylie74",
@@ -178,11 +187,11 @@
             },
             {
                "handle":"Rafaela_Beahan",
-               "platform":"FACEBOOK"
+               "platform":"FBOOK"
             },
             {
                "handle":"Rafaela_Beahan",
-               "platform":"TWITTER"
+               "platform":"TWITT"
             },
             {
                "handle":"Rafaela_Beahan",
@@ -207,7 +216,7 @@
          "channels":[
             {
                "handle":"Emmy_Marquardt16",
-               "platform":"TWITTER"
+               "platform":"TWITT"
             }
          ]
       },
@@ -228,7 +237,7 @@
             },
             {
                "handle":"Arlo20",
-               "platform":"TWITTER"
+               "platform":"TWITT"
             }
          ]
       },
@@ -320,11 +329,11 @@
             },
             {
                "handle":"Mellie.Kulas",
-               "platform":"TWITTER"
+               "platform":"TWITT"
             },
             {
                "handle":"Mellie.Kulas",
-               "platform":"FACEBOOK"
+               "platform":"FBOOK"
             },
             {
                "handle":"Mellie.Kulas",
@@ -349,7 +358,7 @@
             },
             {
                "handle":"Ima_Nienow81",
-               "platform":"TWITTER"
+               "platform":"TWITT"
             },
             {
                "handle":"Ima_Nienow81",
@@ -374,7 +383,7 @@
          "channels":[
             {
                "handle":"Abby64",
-               "platform":"FACEBOOK"
+               "platform":"FBOOK"
             },
             {
                "handle":"Abby64",
@@ -386,7 +395,7 @@
             },
             {
                "handle":"Abby64",
-               "platform":"TWITTER"
+               "platform":"TWITT"
             },
             {
                "handle":"Abby64",
@@ -415,7 +424,7 @@
             },
             {
                "handle":"Viva78",
-               "platform":"FACEBOOK"
+               "platform":"FBOOK"
             },
             {
                "handle":"Viva78",
@@ -440,7 +449,7 @@
          "channels":[
             {
                "handle":"Rudolph.Fisher67",
-               "platform":"FACEBOOK"
+               "platform":"FBOOK"
             },
             {
                "handle":"Rudolph.Fisher67",
@@ -461,7 +470,7 @@
          "channels":[
             {
                "handle":"Florine_Smith",
-               "platform":"FACEBOOK"
+               "platform":"FBOOK"
             },
             {
                "handle":"Florine_Smith",
@@ -502,11 +511,11 @@
             },
             {
                "handle":"Renee.Stracke65",
-               "platform":"FACEBOOK"
+               "platform":"FBOOK"
             },
             {
                "handle":"Renee.Stracke65",
-               "platform":"TWITTER"
+               "platform":"TWITT"
             },
             {
                "handle":"Renee.Stracke65",
@@ -581,7 +590,7 @@
          "channels":[
             {
                "handle":"Zoila_Torphy",
-               "platform":"FACEBOOK"
+               "platform":"FBOOK"
             },
             {
                "handle":"Zoila_Torphy",
@@ -614,7 +623,7 @@
          "channels":[
             {
                "handle":"Viviane_Parker",
-               "platform":"FACEBOOK"
+               "platform":"FBOOK"
             },
             {
                "handle":"Viviane_Parker",
@@ -656,7 +665,7 @@
          "channels":[
             {
                "handle":"Torrey.Nitzsche22",
-               "platform":"TWITTER"
+               "platform":"TWITT"
             },
             {
                "handle":"Torrey.Nitzsche22",
@@ -681,7 +690,7 @@
             },
             {
                "handle":"Rahul9",
-               "platform":"FACEBOOK"
+               "platform":"FBOOK"
             },
             {
                "handle":"Rahul9",
@@ -693,7 +702,7 @@
             },
             {
                "handle":"Rahul9",
-               "platform":"TWITTER"
+               "platform":"TWITT"
             }
          ]
       },
@@ -790,11 +799,11 @@
          "channels":[
             {
                "handle":"Idella4",
-               "platform":"FACEBOOK"
+               "platform":"FBOOK"
             },
             {
                "handle":"Idella4",
-               "platform":"TWITTER"
+               "platform":"TWITT"
             },
             {
                "handle":"Idella4",

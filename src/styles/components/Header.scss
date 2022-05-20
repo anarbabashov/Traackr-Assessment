@@ -1,0 +1,180 @@
+//*** Header.vue ***//
+
+// Variables
+$cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
+$menuItems: 3;
+
+.header {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  background-color: rgba(#edeff2, 0.8);
+  overflow: hidden;
+  transition: all 0.5s ease-out, background 1s ease-out;
+  transition-delay: 0.2s;
+  z-index: 1;
+  border-bottom: 2px solid var(--light-blue);
+  &--menu-opened {
+    height: 100%;
+    background-color: #edeff2;
+    transition: all 0.3s ease-in, background 0.5s ease-in;
+    transition-delay: 0.25s;
+    .humburger {
+      transform: rotate(90deg);
+      &__bar {
+        transition: all 0.4s $cubic;
+        transition-delay: 0.2s;
+        &--topBar {
+          transform: translateY(4px) rotate(45deg);
+        }
+        &--btmBar {
+          transform: translateY(3px) rotate(-45deg);
+        }
+      }
+    }
+    .menu {
+      &__item {
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+        @for $i from 1 through $menuItems {
+          &:nth-child(#{$i}) {
+            transition-delay: #{0.07 * $i + 0.2}s;
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav {
+  display: none;
+  @media screen and (min-width: 800px) {
+    display: block;
+  }
+  &__list {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    list-style: none;
+    margin-left: 16px;
+    a {
+      color: var(--text-blue);
+      text-decoration: none;
+      padding: 16px 24px;
+      font-weight: 600;
+      &.router-link-exact-active {
+        color: var(--text-dark-blue);
+        background-color: #dedede;
+        border-radius: 12px;
+      }
+    }
+  }
+}
+
+.logo {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  left: 15px;
+  &::before,
+  &::after {
+    content: '';
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: absolute;
+  }
+  &::before {
+    background: rgba(165, 180, 252, 0.8);
+    left: 15px;
+    top: 15px;
+  }
+  &::after {
+    content: '';
+    background: rgba(252, 165, 165, 0.8);
+    left: 30px;
+    top: 30px;
+  }
+}
+
+.humburger {
+  position: relative;
+  display: inline-block;
+  float: right;
+  height: 80px;
+  width: 80px;
+  right: 20px;
+  cursor: pointer;
+  transform: rotate(0deg);
+  transition: all 0.3s $cubic;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  &--isMobile {
+    @media screen and (min-width: 800px) {
+      display: none;
+    }
+  }
+  &__button {
+    width: 26px;
+    height: 26px;
+    position: relative;
+    display: block;
+    margin: -4px auto 0;
+    top: 50%;
+  }
+  &__bar {
+    width: 100%;
+    height: 2px;
+    display: block;
+    position: relative;
+    background-color: var(--text-dark-blue);
+    transition: all 0.3s $cubic;
+    transition-delay: 0s;
+    &--topBar {
+      transform: translateY(0px) rotate(0deg);
+    }
+    &--btmBar {
+      transform: translateY(6px) rotate(0deg);
+    }
+  }
+}
+
+.menu {
+  position: absolute;
+  display: block;
+  margin-top: 160px;
+  margin-left: 48px;
+  list-style: none;
+  &__item {
+    margin-bottom: 64px;
+    transform: scale(1.15) translateY(-30px);
+    opacity: 0;
+    transition: transform 0.5s $cubic, opacity 0.6s $cubic;
+    @for $i from 1 through $menuItems {
+      &:nth-child(#{$i}) {
+        transition-delay: #{0.56 - ($i * 0.07)}s;
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    a {
+      display: block;
+      color: var(--text-blue);
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 24px;
+      &.router-link-exact-active {
+        color: var(--text-dark-blue);
+      }
+    }
+  }
+}

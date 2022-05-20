@@ -1,15 +1,15 @@
 <template>
   <div class="account">
-    <h1>My Account</h1>
+    <div class="hero">
+      <Heading :title="$route.name" />
+    </div>
   </div>
 </template>
 
 <script>
-
-
+import Heading from '../components/Heading.vue';
 export default {
   name: 'Account',
-  components: {
-  }
-}
+  components: { Heading },
+};
 </script>
