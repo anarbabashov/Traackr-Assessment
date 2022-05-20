@@ -84,6 +84,12 @@ export default {
       this.expanded = event;
     },
   },
+  watch: {
+    // Set the first page to search on
+    search() {
+      this.currentPage = 1;
+    },
+  },
 };
 </script>
 
