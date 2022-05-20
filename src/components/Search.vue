@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import debounce from 'lodash.debounce';
 export default {
   props: {
     modelValue: String,
@@ -24,10 +25,15 @@ export default {
       searchIcon: require('@/assets/svg/search.svg'),
     };
   },
-  methods: {
-    inputHandler(event) {
+  created() {
+    this.inputHandler = debounce((event) => {
       this.$emit('update:modelValue', event.target.value);
-    },
+    }, 300);
+  },
+  beforeUnmount() {
+    this.inputHandler.cancel();
+  },
+  methods: {
     // Emmiting our Bool value to the parent
     expandInput() {
       this.expanded = true;
