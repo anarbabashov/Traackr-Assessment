@@ -1,4 +1,6 @@
 <template>
+  <!-- For perspective. 
+  Create special svg component with props data (SVG paths, shapes, etc.) -->
   <img :src="icon" :alt="name" />
 </template>
 

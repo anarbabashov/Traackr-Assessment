@@ -1,5 +1,6 @@
 <template>
   <div class="influencers">
+    <!-- Hero contains sections: Heading (h1), Search -->
     <div class="hero">
       <Heading :expandInput="expanded" :title="$route.name" />
       <Search
@@ -9,6 +10,7 @@
       />
     </div>
     <div v-if="filteredInfluencers.length">
+      <!-- List of our influencers -->
       <div class="list">
         <Card
           v-for="influencer in filteredInfluencers.slice(
@@ -19,6 +21,7 @@
           :influencer="influencer"
         />
       </div>
+      <!-- Pagination -->
       <Pagination
         :total-pages="pages"
         :total="filteredInfluencers.length"
@@ -26,6 +29,7 @@
         @pagechanged="onPageChange"
       />
     </div>
+    <!-- Handle error message if search return nothing -->
     <div class="error-message" v-else>
       Sorry, we couldn't find any <br />
       influencer for your search.
@@ -34,7 +38,7 @@
 </template>
 
 <script>
-import { influencers } from '/data/data.json';
+import { influencers } from '/data/data.json'; // Our mock data
 import Heading from '../components/Heading.vue';
 import Search from '../components/Search.vue';
 import Card from '../components/Card.vue';
@@ -52,6 +56,7 @@ export default {
     };
   },
   computed: {
+    // Filtered array of influencers
     filteredInfluencers() {
       return this.influencers.filter((card) => {
         return (
@@ -60,17 +65,21 @@ export default {
         );
       });
     },
+    // Returning count items per page
     pageStart() {
       return (this.currentPage - 1) * this.cardsPerPage;
     },
+    // Returning count of pages
     pages() {
       return Math.ceil(this.filteredInfluencers.length / this.cardsPerPage);
     },
   },
   methods: {
+    // Set the current page
     onPageChange(page) {
       this.currentPage = page;
     },
+    // Get the emmited data from search component
     setExpanded(event) {
       this.expanded = event;
     },

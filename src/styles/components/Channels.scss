@@ -47,11 +47,6 @@
     left: 50%;
     transform: translateX(-50%);
     line-height: 1;
-
-    @media screen and (min-width: 1200px) {
-      width: 16px;
-      height: 16px;
-    }
   }
   img {
     @media screen and (min-width: 800px) {

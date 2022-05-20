@@ -10,7 +10,10 @@
       </div>
     </div>
     <!-- Navigation -->
-    <nav class="nav nav--isDesktop">
+    <!-- For perspective. 
+    Creating sigle nav component for mobile and desktop.
+    All dependencies from acceptance criteria -->
+    <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item"><router-link to="/">Dashboard</router-link></li>
         <li class="nav__item">
@@ -22,6 +25,9 @@
       </ul>
     </nav>
     <!-- Mobile menu -->
+    <!-- For perspective. 
+    Creating sigle nav component for mobile and desktop. 
+    All dependencies from acceptance criteria -->
     <ul class="menu">
       <li class="menu__item"><router-link to="/">Dashboard</router-link></li>
       <li class="menu__item">
@@ -44,7 +50,7 @@ export default {
   },
   methods: {
     toggleMenu() {
-      this.collapsed = this.collapsed ? false : true;
+      this.collapsed = !this.collapsed;
     },
   },
   watch: {

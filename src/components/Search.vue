@@ -7,7 +7,7 @@
       type="text"
       class="search__input"
       placeholder="Search for an influencer"
-      v-on:input="$emit('update:modelValue', $event.target.value)"
+      v-on:input="inputHandler"
       :value="modelValue"
     />
   </form>
@@ -25,10 +25,15 @@ export default {
     };
   },
   methods: {
+    inputHandler(event) {
+      this.$emit('update:modelValue', event.target.value);
+    },
+    // Emmiting our Bool value to the parent
     expandInput() {
       this.expanded = true;
       this.$emit('expanded-event', this.expanded);
     },
+    // Setting the Bool value and emmitin it
     close(e) {
       !this.$el.contains(e.target)
         ? (this.expanded = false)
@@ -37,9 +42,11 @@ export default {
     },
   },
   mounted() {
+    // Close search if click event out of search component
     document.addEventListener('click', this.close);
   },
   beforeDestroy() {
+    // Remove the click event for search component
     document.removeEventListener('click', this.close);
   },
 };
